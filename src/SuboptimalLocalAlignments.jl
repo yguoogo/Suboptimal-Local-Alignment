@@ -233,7 +233,7 @@ module SuboptimalLocalAlignments
     end
 
 
-    @time alignmentListFilt = getFilteredAllSuboptimalAlignment("../data/test2.fa", plotAllAlignments = true, plotGroupAlignments = true)
+    #=@time alignmentListFilt = getFilteredAllSuboptimalAlignment("../data/test2.fa", plotAllAlignments = true, plotGroupAlignments = true)
     ## Print all of the alignments
     for a in alignmentListFilt
         println("Score = $(a.score), start = $(a.startPos), end = $(a.endPos):")
@@ -242,6 +242,6 @@ module SuboptimalLocalAlignments
         println("start position = $(a.startPos)")
         println("end position = $(a.endPos)")
         println()
-    end
+    end=#
 
 end # module
